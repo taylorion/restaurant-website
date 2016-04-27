@@ -12,5 +12,71 @@ li {
 }
 
 img {
-  width: 100%; 
+  width: 100%;
+}
+body {
+  padding:0;
+  margin:0;
+  font-size: 100%;
+}
+#home-image {
+  background:url(../images/svg+xml+16x9edit.svg);
+  background-size: cover;
+  -webkit-background-size: cover
+  width: 100%;
+  height:500px;
+  text-align: center;
+}
+
+#home-image h2 {
+  padding-top: 10%;
+  color: #000;
+  font-size: 400%;
+  margin-bottom: 5%;
+}
+
+#home-image p {
+  margin-bottom: 5%;
+}
+
+#home-image a {
+  background-color: #fff;
+  font-weight: bold;
+  padding: 1%;
+  color: #000;
+  text-decoration: none;
+}
+
+#home-image a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+nav {
+  width: 70%;
+  float: right;
+  text-align: right;
+  line-height: 25px;
+}
+
+nav ul li {
+  padding: 1%;
+  vertical-align: middle;
+}
+
+.clear-fix {
+  clear:both;
+}
+
+header h1 {
+  float:left;
+  width: 30%;
+  line-height: 25px;
+  text-align: left;
+}
+
+header {
+  height: 25px;
+  padding: 0 2%;
+
 }
