@@ -6,6 +6,11 @@ html {
   box-sizing: inherit;
 }
 
+a {
+  text-decoration: none;
+  color:#000;
+}
+
 li {
   list-style-type: none;
   display: inline-block;
@@ -37,14 +42,13 @@ body {
 
 #home-image p {
   margin-bottom: 5%;
+  font-size: 200%;
 }
 
 #home-image a {
   background-color: #fff;
   font-weight: bold;
   padding: 1%;
-  color: #000;
-  text-decoration: none;
 }
 
 #home-image a:hover {
@@ -73,10 +77,15 @@ header h1 {
   width: 30%;
   line-height: 25px;
   text-align: left;
+  font-family: 'Holtwood One SC', serif;
 }
 
 header {
   height: 25px;
   padding: 0 2%;
+}
 
+nav a:hover {
+  text-decoration: underline;
+  color: #0000ff;
 }
