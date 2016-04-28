@@ -8,7 +8,7 @@
 	.st2{fill:none;stroke:#666666;stroke-width:2.9833;stroke-miterlimit:10;}
 </style>
 <title>placeholder</title>
-<rect x="2.4" y="2.5" class="st0" width="1596" height="498.4"/>
+<rect x="2.4" y="2.5" class="st0" width="1596" height="500.6"/>
 <path class="st1" d="M1596.4,3.6v496.2H4.4V3.6H1596.4 M1600.4,1.4H0.4V502h1600V1.4L1600.4,1.4z"/>
 <line class="st2" x1="0.4" y1="1.4" x2="1600.4" y2="502"/>
 <line class="st2" x1="1600.4" y1="1.4" x2="0.4" y2="502"/>

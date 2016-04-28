@@ -82,7 +82,8 @@ nav a:hover {
 }
 
 #home-image {
-  background:url(../images/placeholder-500.svg) 100% top no-repeat;
+  background:url(../images/placeholder-500.svg) top no-repeat;
+  background-size: cover;
   padding-top:8%;
   width: 100%;
   height:500px;
@@ -118,7 +119,35 @@ nav a:hover {
 }
 
 .wrapper {
-  padding: 2%;
-  max-width: 1440px
-  width: 100%
+  padding: 0 2%;
+  max-width: 1440px;
+  width: 100%;
+}
+
+#caption {
+  text-align: center;
+  padding: 2% 0;
+  font-size: 120%;
+}
+
+.special-item {
+  text-align: center;
+  display: table-cell;
+  width: 25%;
+  padding: 0 15px;
+}
+
+.special-item p {
+  text-align: left; 
+}
+
+#specials {
+  width: 100%;
+  display: inline-table;
+  table-layout: fixed;
+}
+
+#specials img {
+  width: 100%;
+  height: 200px;
 }
