@@ -152,3 +152,8 @@ nav a:hover {
   width: 100%;
   height: 200px;
 }
+
+section img {
+  float: left;
+  width: 50%;
+}
