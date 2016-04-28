@@ -2,6 +2,8 @@ html {
   box-sizing: border-box;
 }
 
+
+
 *, *::before, *::after {
   box-sizing: inherit;
 }
@@ -24,10 +26,23 @@ body {
   margin:0;
   font-size: 100%;
 }
+
+h1 {
+  font-size: 130%;
+}
+
+h2 {
+  font-size: 120%;
+}
+
+h3 {
+  font-size: 110%;
+}
+
 #home-image {
   background:url(../images/svg+xml+16x9edit.svg);
   background-size: cover;
-  -webkit-background-size: cover
+  -webkit-background-size: 100%;
   width: 100%;
   height:500px;
   text-align: center;
@@ -37,12 +52,14 @@ body {
   padding-top: 10%;
   color: #000;
   font-size: 400%;
-  margin-bottom: 5%;
+  margin-bottom: 2.5%;
+  font-family: 'Bevan', cursive;
 }
 
 #home-image p {
-  margin-bottom: 5%;
+  margin: 0;
   font-size: 200%;
+  padding-bottom: 5%;
 }
 
 #home-image a {
@@ -77,8 +94,7 @@ header h1 {
   width: 30%;
   line-height: 25px;
   text-align: left;
-  font-family: 'Holtwood One SC', serif;
-}
+  font-family: 'Bevan', cursive;}
 
 header {
   height: 25px;
