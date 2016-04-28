@@ -2,10 +2,13 @@ html {
   box-sizing: border-box;
 }
 
-
-
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
 }
 
 a {
@@ -25,6 +28,7 @@ body {
   padding:0;
   margin:0;
   font-size: 100%;
+  line-height: 1.5;
 }
 
 h1 {
@@ -40,7 +44,7 @@ h3 {
 }
 
 #home-image {
-  background:url(../images/svg+xml+16x9edit.svg);
+  background:url(../images/placeholder-500.svg);
   background-size: cover;
   -webkit-background-size: 100%;
   width: 100%;
@@ -77,12 +81,24 @@ nav {
   width: 70%;
   float: right;
   text-align: right;
-  line-height: 25px;
+  line-height: 1.4;
 }
 
 nav ul li {
   padding: 1%;
   vertical-align: middle;
+}
+
+nav a {
+  border: 3px solid #ffffff;
+  padding: 1% 5%;
+  background-color: #ffffff;
+}
+
+nav a:hover {
+  background-color: #fffffe;
+  border: 3px solid #000;
+
 }
 
 .clear-fix {
@@ -92,16 +108,12 @@ nav ul li {
 header h1 {
   float:left;
   width: 30%;
-  line-height: 25px;
+  line-height: 1.4;
   text-align: left;
-  font-family: 'Bevan', cursive;}
+  font-family: 'Bevan', cursive;
+}
 
 header {
   height: 25px;
   padding: 0 2%;
-}
-
-nav a:hover {
-  text-decoration: underline;
-  color: #0000ff;
 }
