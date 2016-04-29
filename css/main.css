@@ -148,12 +148,44 @@ nav a:hover {
   table-layout: fixed;
 }
 
+#specials p {
+  width: 100%;
+  margin: 1%;;
+}
+
 #specials img {
   width: 100%;
   height: 200px;
 }
 
+#specials h4 {
+  margin: 0;
+  padding-top: 2%;
+}
+
 section img {
-  float: left;
+  float:left;
   width: 50%;
+  height: 200px;
+}
+
+section p {
+  width: 50%;
+  height: 200px;
+  width: 50%;
+}
+
+section h2 {
+  font-size: 140%;
+  width: 50%;
+}
+
+.left img {
+  float: left;
+  padding-right: 45px;
+}
+
+.right img {
+  float: right;
+  padding-left: 45px;
 }
