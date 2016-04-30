@@ -313,6 +313,22 @@ footer {
   .special-item p {
     text-align: left;
   }
+
+  .special-item:nth-child(n+3){
+	  width:25%;
+  }
+
+  section img,
+  section .content {
+    width:49%;
+    height:200px;
+  }
+
+  .left img,
+	.right img {
+	  float: left right;
+	  padding-bottom:0%;
+  }
 }
 
 /* desktop */
@@ -335,9 +351,34 @@ footer {
     text-align: left;
   }
 
+  .special-item:nth-child(n+3){
+	  width:25%;
+  }
+
+  section {
+    width:100%;
+    padding-bottom: 5%;
+  }
+
   section img,
   section .content {
     width:49%;
     height:200px;
+  }
+
+  .right img {
+    float:right;
+  }
+
+  .right .content {
+    padding-right:15px;
+  }
+
+  .left img {
+    float:left;
+  }
+
+  .left .content {
+    float:right;
   }
 }
