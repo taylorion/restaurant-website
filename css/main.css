@@ -62,7 +62,7 @@ h3 {
 /* HEADER BAR */
 
 header h1 {
-  font-size: 250%;
+  font-size: 180%;
   width: 30%;
   line-height: 1.4;
   text-align: left;
@@ -77,8 +77,36 @@ header {
 
 /* NAVIGATION */
 
+.mobile {
+  display:none;
+  height:40px;
+  float:right;
+  text-align:right;
+  width:40px;
+}
+
+.mobile img {
+  height:40px;
+}
+
+.nav-close {
+  display: none;
+}
+
+.nav-check {
+  position: absolute;
+  top: -3em;
+}
+
+.nav-check:checked ~ header .mobile .nav-open {
+  display: none;
+}
+
+.nav-check:checked ~ header .mobile .nav-close {
+  display: block;
+}
+
 nav {
-  margin-top: 5px;
   width: 70%;
   float: right;
   text-align: right;
@@ -90,6 +118,7 @@ nav a {
   background-color: #fff;
   padding: 0 10px;
   margin: 0 10px;
+  font-size: 130%;
 }
 
 nav a:hover {
@@ -111,6 +140,7 @@ nav a:hover {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  width:100%;
 }
 
 .banner-text h2 {
@@ -137,10 +167,6 @@ nav a:hover {
 .img-flex {
   display: block;
   width: 100%;
-}
-
-.clear-fix {
-  clear:both;
 }
 
 .wrapper {
@@ -192,16 +218,17 @@ nav a:hover {
 section {
   width:100%;
   padding-bottom: 5%;
+  display: inline-block;
 }
 
 section img,
 section .content {
   width:49%;
-  height:200px;
 }
 
 .right img {
   float:right;
+  padding-right: 15px;
 }
 
 .right .content {
@@ -210,6 +237,7 @@ section .content {
 
 .left img {
   float:left;
+  padding-left: 15px;
 }
 
 .left .content {
@@ -241,31 +269,43 @@ footer {
   text-align: center;
 }
 
-.absolute {
-  position: absolute;
-}
-
-.mobile {
-  display:none;
-  height:40px;
-  float:right;
-  text-align:right;
-  width:40px;
-  padding-top:2%;
-}
-
-.mobile img {
-  height:40px;
-}
 /* mobile */
 @media only screen and (min-width: 25em) {
 
-  nav ul {
+  header h1 {
+    width: 80%;
+  }
+
+  nav {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .nav-check:checked ~ header nav ul li {
+    display: inline-block;
+  }
+
+  .nav-check:checked ~ header {
+    height: 250px;
+  }
+
+  nav ul li {
     display:none;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
   }
 
   .mobile {
     display:block;
+  }
+
+  .banner-text h2 {
+    font-size: 200%;
+  }
+
+  .banner-text p, a {
+    font-size: 100%;
   }
 
   .special-item {
@@ -280,11 +320,31 @@ footer {
 
   section .content {
     width:100%;
+    text-align: center;
   }
+
+  .left img,
+  .right img {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
 }
 
 /* small */
 @media only screen and (min-width: 38em) {
+
+  header h1 {
+    width: 90%;
+  }
+
+  .banner-text h2 {
+    font-size: 300%;
+  }
+
+  .banner-text p, a {
+    font-size: 150%;
+  }
 
   .special-item {
     text-align: center;
@@ -302,6 +362,7 @@ footer {
 
   section .content {
     height:auto;
+    text-align: center;
   }
 
   section img {
@@ -318,16 +379,37 @@ footer {
 /* medium */
 @media only screen and (min-width: 60em) {
 
+  header h1 {
+    width: 30%;
+  }
+
+  nav {
+    width: 70%;
+  }
+
   nav ul {
     display:block;
   }
 
+  nav ul li {
+    display:inline-block;
+    width: inherit;
+  }
+
+  .nav-check:checked ~ header nav ul li {
+    display: inline-block;;
+  }
+
   .mobile {
     display:none;
-    display:block;
-    width:50%;
-    float:left;
-    padding-bottom:5%;
+  }
+
+  .banner-text h2 {
+    font-size: 400%;
+  }
+
+  .banner-text p, a {
+    font-size: 200%;
   }
 
   .special-item {
@@ -348,7 +430,7 @@ footer {
   section img,
   section .content {
     width:49%;
-    height:200px;
+    text-align: left;
   }
 
   .right img {
@@ -375,6 +457,11 @@ footer {
     display:block;
   }
 
+  nav ul li {
+    display:inline-block;
+    width: inherit;
+  }
+
   .mobile {
     display:none;
   }
@@ -397,12 +484,13 @@ footer {
   section {
     width:100%;
     padding-bottom: 5%;
+    display: inline-block;
   }
 
   section img,
   section .content {
     width:49%;
-    height:200px;
+    text-align: left;
   }
 
   .right img {
