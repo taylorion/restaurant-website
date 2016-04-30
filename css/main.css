@@ -4,6 +4,8 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  display: block;
+  position: relative;
 }
 
 *, *::before, *::after {
@@ -195,11 +197,6 @@ section .content {
   float:right;
 }
 
-section::after {
-  content: " ";
-  clear:both;
-}
-
 .social-media {
   padding: 50px 0;
 
@@ -223,4 +220,124 @@ section::after {
 footer {
   padding: 0 2%;
   text-align: center;
+}
+
+.absolute {
+  position: absolute;
+}
+.mobile {
+	display:none;
+	height:40px;
+	float:right;
+	text-align:right;
+	width:40px;
+	padding-top:2%;
+}
+.mobile img {
+	height:40px;
+}
+/* mobile */
+@media only screen and (min-width: 25em) {
+	nav ul{
+		display:none;
+	}
+	.mobile {
+		display:block;
+	}
+	.special-item {
+		display:block;
+		width:100%;
+		padding-bottom:5%;
+	}
+  section img {
+  	width:100%;
+  }
+  section .content {
+  	width:100%;
+  }
+}
+
+/* small */
+@media only screen and (min-width: 38em) {
+  .special-item {
+    text-align: center;
+    display:inline-block;
+    width: 50%;
+  }
+
+  .special-item:nth-child(n+3){
+	  width:49%;
+  }
+
+  .special-item p {
+    text-align: left;
+  }
+
+  section .content{
+	  height:auto;
+  }
+
+  section img {
+    width:100%;
+  }
+
+	.left img,
+	.right img {
+	  float:none;
+	  padding-bottom:2%;
+  }
+}
+
+/* medium */
+@media only screen and (min-width: 60em) {
+	nav ul{
+		display:block;
+	}
+
+	.mobile{
+		display:none;
+		.special-item{
+		display:block;
+		width:50%;
+		float:left;
+		padding-bottom:5%;
+	}
+
+  .special-item {
+    text-align: center;
+    display: table-cell;
+    width: 25%;
+    padding: 0 15px;
+  }
+
+  .special-item p {
+    text-align: left;
+  }
+}
+
+/* desktop */
+@media only screen and (min-width: 90em) {
+	nav ul{
+		display:block;
+	}
+	.mobile{
+		display:none;
+	}
+
+  .special-item {
+    text-align: center;
+    display: table-cell;
+    width: 25%;
+    padding: 0 15px;
+  }
+
+  .special-item p {
+    text-align: left;
+  }
+
+  section img,
+  section .content {
+    width:49%;
+    height:200px;
+  }
 }
