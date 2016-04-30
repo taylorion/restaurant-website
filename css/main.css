@@ -146,11 +146,12 @@ nav a:hover {
   width: 100%;
   display: inline-table;
   table-layout: fixed;
+  padding-bottom: 5%;
 }
 
 #specials p {
   width: 100%;
-  margin: 1%;;
+  margin: 1%;
 }
 
 #specials img {
@@ -163,29 +164,59 @@ nav a:hover {
   padding-top: 2%;
 }
 
-section img {
-  float:left;
-  width: 50%;
-  height: 200px;
+section {
+  width:100%;
+  padding-bottom: 5%;
 }
 
-section p {
-  width: 50%;
-  height: 200px;
-  width: 50%;
-}
-
-section h2 {
-  font-size: 140%;
-  width: 50%;
-}
-
-.left img {
-  float: left;
-  padding-right: 45px;
+section img,
+section .content {
+  width:49%;
+  height:200px;
 }
 
 .right img {
-  float: right;
-  padding-left: 45px;
+  float:right;
+}
+
+.right .content {
+  padding-right:15px;
+}
+
+.left img {
+  float:left;
+}
+
+.left .content {
+  float:right;
+}
+
+section::after {
+  content: " ";
+  clear:both;
+}
+
+.social-media {
+  padding: 50px 0;
+
+}
+
+.social-icons img {
+  height: 35px;
+  margin: .5em .25em;
+  width: 35px;
+}
+
+.social-icons {
+  height: 50px;
+}
+
+#fb {
+  vertical-align: baseline;
+  display: inline;
+}
+
+footer {
+  padding: 0 2%;
+  text-align: center;
 }

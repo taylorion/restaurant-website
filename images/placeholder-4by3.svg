@@ -1,1 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600"><title>placeholder</title><rect x="2" y="2" width="796" height="596" fill="#e2e2e2"/><path d="M796,4V596H4V4H796m4-4H0V600H800V0h0Z" fill="#666"/><line x2="800" y2="600" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="4"/><line x1="800" y2="600" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="4"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 315 200" style="enable-background:new 0 0 315 200;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#E2E2E2;}
+	.st1{fill:#666666;}
+	.st2{fill:none;stroke:#666666;stroke-width:1.4491;stroke-miterlimit:10;}
+</style>
+<title>placeholder</title>
+<rect x="0.8" y="0.7" class="st0" width="313.4" height="198.7"/>
+<path class="st1" d="M313.5,1.4v197.3H1.6V1.4H313.5 M315,0H0v200h315V0L315,0z"/>
+<line class="st2" x1="0" y1="0" x2="315" y2="200"/>
+<line class="st2" x1="315" y1="0" x2="0" y2="200"/>
+</svg>
